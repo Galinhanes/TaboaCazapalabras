@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+      animation: fondofooter 20s linear infinite;
+     background: linear-gradient(0deg, rgb(184, 159, 48) var(--porcentaxe1), rgb(156, 199, 87) var(--porcentaxe2), rgb(30, 146, 107) var(--porcentaxe3));/* Azul para encabezados */
+}
+
+
+
+.table-container {
+    max-width: 90%;
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    min-width: 50px; /* Ancho mínimo para las celdas */
+    height: 30px;
+}
+
+/* Estilo para las celdas de encabezado (nombres) */
+th {
+     background: linear-gradient(90deg, rgba(42, 123, 155, 1) var(--porcentaxe1), rgba(87, 199, 133, 1) var(--porcentaxe2), rgb(146, 135, 30) var(--porcentaxe3));/* Azul para encabezados */
+    color: white;
+    font-weight: bold;
+    animation: fondofooter 20s linear infinite;
+}
+
+/* Clase para el color inicial (Verde) */
+.green-bg {
+    background-color: #4CAF50; /* Verde */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Transición suave de color */
+}
+
+/* Clase para el color al hacer clic (Rojo) */
+.red-bg {
+    background-color: #f44336; /* Rojo */
+}
+
+/* Esquina superior izquierda vacía */
+td:first-child:empty { 
+    background-color: #2c3e50;
+}
+
+@property --porcentaxe1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --porcentaxe2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --porcentaxe3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%;
+}
+
+@keyframes fondofooter {
+
+    0%,
+    100% {
+        --porcentaxe1: -50%;
+        --porcentaxe2: 0%;
+        --porcentaxe3: 50%
+    }
+
+    50% {
+        --porcentaxe1: 60%;
+        --porcentaxe2: 110%;
+        --porcentaxe3: 160%
+    }
+
+}
+h1{
+    color: #FFFFFF;
+background: #0e8dbc;
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2vw;
+border-radius: 1vw;
+}
+.texto{font-weight: 700;}
