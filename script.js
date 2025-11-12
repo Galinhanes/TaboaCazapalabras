@@ -1,12 +1,12 @@
 // Nombres para los encabezados de las COLUMNAS (12 nombres)
 const columnNames = [
    "Alumno", "Avaliación", "Calendario", "Capacidade", "Diagrama", "Formación", "Gráfico",
-    "Obxectivo", "Proxector", "Recurso", "Rotafolios", "Taboleiro", 
+    "Obxectivo","Pantalla", "Proxector", "Recurso", "Rotafolios", "Taboleiro", 
 ];
 
 // Nombres para los encabezados de las FILAS (12 nombres)
 const rowNames = [
-    "Bruno", "Belén", "Mariel", "Álvaro", "Abraham", "Sara",
+    "Bruno","Miguel", "Belén", "Mariel", "Álvaro", "Abraham", "Sara",
     "Marta", "Borja", "Ana María", "Olga", "Jesús", "Salvador"
 ];
 
@@ -59,4 +59,5 @@ function toggleColor(event) {
 }
 
 // Llama a la función para construir la tabla al cargar el script
+
 generateTable();
